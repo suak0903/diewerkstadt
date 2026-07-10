@@ -49,10 +49,9 @@ p{margin:0 0 1em}
 .lead{font-size:18.5px;line-height:1.6}
 .muted{color:var(--muted)}
 .eyebrow{
-  display:inline-flex;align-items:center;gap:10px;
+  display:inline-block;
   font-size:12.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--rot);
 }
-.eyebrow::before{content:"";width:22px;height:3px;background:var(--rot);flex:0 0 auto}
 
 /* Werkkante: roter Balken unter Sektions-Headlines */
 .kante{display:block;width:44px;height:4px;background:var(--rot);margin-top:18px}
@@ -153,7 +152,7 @@ p{margin:0 0 1em}
 .mmenu.open .mmenu__links a:nth-child(6){animation-delay:.31s}
 @keyframes mmin{to{opacity:1;transform:none}}
 .mmenu__links a:hover{color:#fff;padding-left:12px}
-.mmenu__links .n{font-family:'Be Vietnam Pro';font-size:12px;font-weight:700;letter-spacing:.14em;color:var(--rot)}
+.mmenu__links .n{display:none}
 .mmenu__foot{display:flex;flex-direction:column;gap:14px;margin-bottom:auto}
 .mmenu__foot .btn{width:100%}
 .mmenu__contact{display:grid;grid-template-columns:1fr 1fr;gap:10px}
@@ -263,9 +262,8 @@ p{margin:0 0 1em}
 
 /* Werte: nummerierte Werkbank-Liste */
 .werte{list-style:none;margin:30px 0 0;padding:0}
-.werte li{display:flex;gap:20px;padding:18px 2px;border-bottom:1px solid var(--line);align-items:baseline}
+.werte li{display:block;padding:18px 2px;border-bottom:1px solid var(--line)}
 .werte li:last-child{border-bottom:0}
-.werte .n{font-family:'Anton',sans-serif;font-size:22px;color:var(--rot);flex:0 0 34px}
 .werte b{display:block;font-size:16.5px;font-weight:700;color:var(--stahl);margin-bottom:4px}
 .werte p{margin:0;font-size:15px;color:var(--muted)}
 
@@ -354,7 +352,7 @@ p{margin:0 0 1em}
   background:var(--stahl-2);border:1px solid var(--stahl-3);padding:30px 28px 26px;
   display:flex;flex-direction:column;
 }
-.gr .nr{font-family:'Anton',sans-serif;font-size:17px;color:var(--rot);letter-spacing:.1em;margin-bottom:16px}
+
 .gr h3{font-size:22px;letter-spacing:.04em;color:#fff;margin:0 0 6px}
 .gr .firma{font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(232,234,238,.55);margin-bottom:14px}
 .gr p{font-size:14.5px;color:rgba(232,234,238,.72);margin:0;flex:1}
